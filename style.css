@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    background-color: var(--bg-dark)
+}
+
+body,input,button,select,textarea{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+:root {
+    --royal-blue:#5280E2;
+    --egg-blue: #15CDCB;
+    --bg-dark: #212226;
+    --light-gray: #e0dede;
+
+    --menu-height: 75px;
+}
+
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    color: var(--light-gray);
+}
+
+button{
+    background-color: var(--royal-blue);
+    border: 0;
+    border-radius: 16px;
+    padding: 8px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header{
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}
+
+header .container h1 {
+    color: var(--egg-blue);
+}
+
+header .container button {
+    margin-top:40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--menu-height);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-dark);
+}
+
+nav ul a {
+    color: var(--egg-blue);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+section{height: 150vh;}
