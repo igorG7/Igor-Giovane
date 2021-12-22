@@ -88,6 +88,8 @@ nav{
     padding: 0 100px;
     position: sticky;
     top: 0;  
+
+    z-index: 100;
 }
 
 nav img {
@@ -123,10 +125,29 @@ nav ul a svg {
 .about-me .img-container {
     width: 50%;
     text-align: center;
+    position: relative;
+}
+
+.about-me .img-container .line{
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--royal-blue);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px) ;
+}
+
+.about-me .img-container .line:nth-child(2){
+    transform: rotate(-3.3deg);
+    border: 1px solid var(--egg-blue)
+
 }
 
 .about-me .img-container img {
     width: 70%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -144,6 +165,22 @@ nav ul a svg {
         padding: 0 30px;
     }
   
+    .about-me{
+        flex-direction: column;
+    }
+
+    .about-me .container, .about-me .img-container{
+        width: 100%;
+    }
+
+    .about-me .container {
+        padding-right: 0;
+    }
+    
+    .about-me .img-container{
+        margin:  70px 0;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -151,7 +188,7 @@ nav ul a svg {
     header .container img {
         display: inline;
         margin-bottom: 70px;
-        height: 45px;
+        height: 65px;
     }  
 
     nav img {
@@ -187,5 +224,9 @@ nav ul a svg {
     nav ul a svg {
         display: block;
         margin: 0 auto 10px;
+    }
+
+    .about-me{
+        padding: 40px ;
     }
 }
