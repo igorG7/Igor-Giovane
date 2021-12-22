@@ -23,6 +23,14 @@ body,input,button,select,textarea{
     --menu-height: 75px;
 }
 
+.title-egg-blue{
+    color: var(--egg-blue);
+}
+
+.title-royal-blue {
+    color: var(--royal-blue);
+}
+
 h1{
     font-size: 44px;
 }
@@ -66,10 +74,6 @@ header .container img {
     display: none;
 }
 
-header .container h1 {
-    color: var(--egg-blue);
-}
-
 header .container button {
     margin-top:40px;
 }
@@ -106,10 +110,25 @@ nav ul a svg {
     display: none;
 }
 
-section{
-    height: 1500px;
-    background-color: rgba(54, 0, 54, 0.767);
+.about-me {
+    display: flex;
+    padding: 100px;
 }
+
+.about-me .container{
+    width: 50%;
+    padding-right:50px ;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.about-me .img-container img {
+    width: 70%;
+}
+
 
 /* RESPONSIVIDADE */
 @media (max-width: 1000px) {
