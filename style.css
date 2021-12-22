@@ -87,7 +87,7 @@ nav{
 }
 
 nav img {
-    height: 45px;
+    height: 65px;
 }
 
 nav ul  {
@@ -132,6 +132,7 @@ section{
     header .container img {
         display: inline;
         margin-bottom: 70px;
+        height: 45px;
     }  
 
     nav img {
@@ -153,6 +154,10 @@ section{
     }
 
     nav {
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        width: 100%;
         padding: 0 15px;
     }
 
