@@ -150,6 +150,50 @@ nav ul a svg {
     object-fit: cover;
 }
 
+.services{
+    text-align: center;
+    margin: 100px 0;
+    padding: 0 100px ;
+}
+
+.services .services-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    
+
+}
+
+.services .services-container .services-card{
+    max-width: 360px;
+    background: #2F3034;
+    border: 1px solid var(--royal-blue);
+    border-radius: 16px;
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.services .services-container .services-card svg {
+    margin-bottom: 40px;
+    padding: 8px;
+    color: var(--egg-blue);
+
+    background-color: rgb(39, 33, 33);
+    border-radius: 50px;
+    
+    width: 52px;
+    height: 52px;
+}
+
+.services-card + .services-card {
+    margin-left: 10px;
+}
 
 /* RESPONSIVIDADE */
 @media (max-width: 1000px) {
@@ -181,6 +225,23 @@ nav ul a svg {
         margin:  70px 0;
     }
 
+    .services {
+        padding: 0;
+    }
+
+    .services .services-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-card{
+        height: 394px;
+    }
+
+    .services-card + .services-card{
+        margin: 20px 0 0 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -228,5 +289,13 @@ nav ul a svg {
 
     .about-me{
         padding: 40px ;
+    }
+
+    .services {
+        margin: 50px 0;
+    }
+
+    .services .services-container{
+        padding: 0 20px;
     }
 }
