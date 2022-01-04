@@ -135,6 +135,7 @@ nav ul a svg {
 
 .about-me {
     display: flex;
+    align-items: center;
     padding: 100px;
 }
 
