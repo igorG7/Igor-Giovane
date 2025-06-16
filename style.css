@@ -332,9 +332,9 @@ nav ul a svg {
 }
 
 .contact {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 64px auto;
   text-align: center;
 }
 .contact h2 {
@@ -346,17 +346,20 @@ nav ul a svg {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.contact button {
-  margin: 40px auto;
+.contact .container {
+  width: 100%;
+}
+.contact .container button {
+  margin: 32px auto;
   height: 50px;
 }
-.contact .social-media {
+.contact .container .social-media {
   max-width: 360px;
-  margin: 50px auto 0;
+  margin: 64px auto 0;
   display: flex;
   justify-content: space-around;
 }
-.contact .social-media a svg {
+.contact .container .social-media a svg {
   color: #15cdcb;
   width: 30px;
   height: 30px;
@@ -501,7 +504,7 @@ nav ul a svg {
     display: block;
     margin: auto;
   }
-  .contact .social-media a svg {
+  .contact .container .social-media a svg {
     width: 24px;
     height: 24px;
   }
@@ -549,5 +552,8 @@ nav ul a svg {
   .curriculum .container .infos-container .content .secondary-button svg {
     width: 20px;
     height: 20px;
+  }
+  .contact .container button {
+    padding: 0 16px;
   }
 }/*# sourceMappingURL=style.css.map */

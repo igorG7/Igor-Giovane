@@ -398,9 +398,10 @@ nav {
 
 // Seção "Contact"
 .contact {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 64px auto;
+
   text-align: center;
 
   h2 {
@@ -411,21 +412,24 @@ nav {
     -webkit-text-fill-color: transparent;
   }
 
-  button {
-    margin: 40px auto;
-    height: 50px;
-  }
+  .container {
+    width: 100%;
+    button {
+      margin: 32px auto;
+      height: 50px;
+    }
 
-  .social-media {
-    max-width: 360px;
-    margin: 50px auto 0;
-    display: flex;
-    justify-content: space-around;
+    .social-media {
+      max-width: 360px;
+      margin: 64px auto 0;
+      display: flex;
+      justify-content: space-around;
 
-    a svg {
-      color: $egg-blue;
-      width: 30px;
-      height: 30px;
+      a svg {
+        color: $egg-blue;
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
@@ -619,10 +623,12 @@ nav {
   }
 
   .contact {
-    .social-media {
-      a svg {
-        width: 24px;
-        height: 24px;
+    .container {
+      .social-media {
+        a svg {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
@@ -690,6 +696,14 @@ nav {
             }
           }
         }
+      }
+    }
+  }
+
+  .contact {
+    .container {
+      button {
+        padding: 0 16px;
       }
     }
   }
