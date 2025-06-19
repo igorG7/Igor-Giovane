@@ -32,6 +32,10 @@ textarea {
 
 h1 {
   font-size: 44px;
+  background: -webkit-linear-gradient(#15cdcb, #5280e2);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -199,7 +203,7 @@ nav ul a svg {
   text-align: center;
 }
 .services .services-container .services-card .title-service {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
 }
 .services .services-container .services-card .circle-svg {
@@ -266,6 +270,7 @@ nav ul a svg {
 }
 .portfolio .portfolio-container .portfolio-card .portfolio-img-container img {
   width: 100%;
+  border-radius: 16px;
 }
 .portfolio .portfolio-container .portfolio-card .language-container {
   margin-bottom: 20px;
@@ -275,20 +280,27 @@ nav ul a svg {
   list-style: none;
   padding: 0;
 }
-.portfolio .portfolio-container .portfolio-card .language-container ul li {
-  color: #15cdcb;
-  border: 1px solid #15cdcb;
-  border-radius: 16px;
-  padding: 3px 16px;
+.portfolio .portfolio-container .portfolio-card .language-container ul li img {
+  width: 25px;
 }
 .portfolio .portfolio-container .portfolio-card .language-container ul li + li {
   margin-left: 10px;
 }
-.portfolio .portfolio-container .portfolio-card .language-container p {
+.portfolio .portfolio-container .portfolio-card .description p {
   margin: 0;
 }
+.portfolio .portfolio-container .portfolio-card .description a {
+  margin-top: 16px;
+  color: #e0dede;
+  align-items: center;
+  display: flex;
+}
+.portfolio .portfolio-container .portfolio-card .description a svg {
+  width: 16px;
+  margin-right: 8px;
+}
 .portfolio .portfolio-container .portfolio-card + .portfolio-card {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .curriculum {
@@ -470,7 +482,6 @@ nav ul a svg {
     flex-wrap: wrap;
   }
   .portfolio .portfolio-container .portfolio-card .language-container ul li {
-    padding: 4px 8px;
     font-size: 14px;
   }
   .portfolio .portfolio-container .portfolio-card .language-container ul li + li {

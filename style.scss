@@ -51,6 +51,9 @@ textarea {
 
 h1 {
   font-size: 44px;
+  background: -webkit-linear-gradient($egg-blue, $royal-blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -236,7 +239,7 @@ nav {
       text-align: center;
 
       .title-service {
-        font-size: 20px;
+        font-size: 18px;
         margin: 0;
       }
 
@@ -312,6 +315,7 @@ nav {
 
         img {
           width: 100%;
+          border-radius: 16px;
         }
       }
 
@@ -320,28 +324,42 @@ nav {
 
         ul {
           display: flex;
+
           list-style: none;
           padding: 0;
 
           li {
-            color: $egg-blue;
-            border: 1px solid $egg-blue;
-            border-radius: 16px;
-            padding: 3px 16px;
+            img {
+              width: 25px;
+            }
 
             & + li {
               margin-left: 10px;
             }
           }
         }
+      }
 
+      .description {
         p {
           margin: 0;
+        }
+
+        a {
+          margin-top: 16px;
+          color: $light-gray;
+          align-items: center;
+          display: flex;
+
+          svg {
+            width: 16px;
+            margin-right: 8px;
+          }
         }
       }
 
       & + .portfolio-card {
-        margin-left: 10px;
+        margin-left: 8px;
       }
     }
   }
@@ -569,7 +587,6 @@ nav {
             flex-wrap: wrap;
 
             li {
-              padding: 4px 8px;
               font-size: 14px;
 
               & + li {
